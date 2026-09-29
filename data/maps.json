@@ -73,8 +73,8 @@
       "year": 2007,
       "developer": "Valve",
       "platform": "PC",
-      "verified": false,
-      "scope": "PROPOSED 20-map canonical cut from 91 Valve maps; awaiting sign-off"
+      "verified": true,
+      "scope": "20-map canonical cut from the 91 Valve maps; approved"
     },
     {
       "id": "r6siege",
@@ -94,7 +94,8 @@
       "developer": "Bungie",
       "platform": "Multi",
       "verified": false,
-      "scope": "curated notable set across D1+D2, deduped; map list NOT fully verified"
+      "scope": "Destiny 1 Crucible only; D2 excluded by scope decision",
+      "review_note": "map list still needs review - Destiny wikis unreachable from this environment"
     }
   ],
   "maps": [
@@ -1365,166 +1366,146 @@
       "game_id": "tf2",
       "name": "2Fort",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-dustbowl",
       "game_id": "tf2",
       "name": "Dustbowl",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-granary",
       "game_id": "tf2",
       "name": "Granary",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-gravel-pit",
       "game_id": "tf2",
       "name": "Gravel Pit",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-well",
       "game_id": "tf2",
       "name": "Well",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-hydro",
       "game_id": "tf2",
       "name": "Hydro",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-badlands",
       "game_id": "tf2",
       "name": "Badlands",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-goldrush",
       "game_id": "tf2",
       "name": "Goldrush",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-badwater-basin",
       "game_id": "tf2",
       "name": "Badwater Basin",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-upward",
       "game_id": "tf2",
       "name": "Upward",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-turbine",
       "game_id": "tf2",
       "name": "Turbine",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-gorge",
       "game_id": "tf2",
       "name": "Gorge",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-harvest",
       "game_id": "tf2",
       "name": "Harvest",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-doublecross",
       "game_id": "tf2",
       "name": "Doublecross",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-barnblitz",
       "game_id": "tf2",
       "name": "Barnblitz",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-steel",
       "game_id": "tf2",
       "name": "Steel",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-thunder-mountain",
       "game_id": "tf2",
       "name": "Thunder Mountain",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-viaduct",
       "game_id": "tf2",
       "name": "Viaduct",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-powerhouse",
       "game_id": "tf2",
       "name": "Powerhouse",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "tf2-snakewater",
       "game_id": "tf2",
       "name": "Snakewater",
       "release": "canonical",
-      "verified": false,
-      "note": "PROPOSED cut from 91 Valve maps; awaiting sign-off"
+      "verified": true
     },
     {
       "id": "destiny-rusted-lands",
       "game_id": "destiny",
       "name": "Rusted Lands",
-      "origin": "both",
+      "origin": "d1",
       "release": "curated",
       "verified": false,
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
@@ -1551,7 +1532,7 @@
       "id": "destiny-twilight-gap",
       "game_id": "destiny",
       "name": "Twilight Gap",
-      "origin": "both",
+      "origin": "d1",
       "release": "curated",
       "verified": false,
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
@@ -1569,7 +1550,7 @@
       "id": "destiny-exodus-blue",
       "game_id": "destiny",
       "name": "Exodus Blue",
-      "origin": "both",
+      "origin": "d1",
       "release": "curated",
       "verified": false,
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
@@ -1587,7 +1568,7 @@
       "id": "destiny-widow-s-court",
       "game_id": "destiny",
       "name": "Widow's Court",
-      "origin": "both",
+      "origin": "d1",
       "release": "curated",
       "verified": false,
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
@@ -1614,7 +1595,7 @@
       "id": "destiny-bannerfall",
       "game_id": "destiny",
       "name": "Bannerfall",
-      "origin": "both",
+      "origin": "d1",
       "release": "curated",
       "verified": false,
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
@@ -1665,112 +1646,25 @@
       "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
     },
     {
-      "id": "destiny-wormhaven",
-      "game_id": "destiny",
-      "name": "Wormhaven",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
+      "id": "cs-estate",
+      "game_id": "cs",
+      "name": "Estate",
+      "release": "canonical",
+      "verified": true
     },
     {
-      "id": "destiny-javelin-4",
-      "game_id": "destiny",
-      "name": "Javelin-4",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
+      "id": "cs-oilrig",
+      "game_id": "cs",
+      "name": "Oilrig",
+      "release": "canonical",
+      "verified": true
     },
     {
-      "id": "destiny-altar-of-flame",
-      "game_id": "destiny",
-      "name": "Altar of Flame",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-cathedral-of-dusk",
-      "game_id": "destiny",
-      "name": "Cathedral of Dusk",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-endless-vale",
-      "game_id": "destiny",
-      "name": "Endless Vale",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-midtown",
-      "game_id": "destiny",
-      "name": "Midtown",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-dead-cliffs",
-      "game_id": "destiny",
-      "name": "Dead Cliffs",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-emerald-coast",
-      "game_id": "destiny",
-      "name": "Emerald Coast",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-convergence",
-      "game_id": "destiny",
-      "name": "Convergence",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-fragment",
-      "game_id": "destiny",
-      "name": "Fragment",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-distant-shore",
-      "game_id": "destiny",
-      "name": "Distant Shore",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
-    },
-    {
-      "id": "destiny-eternity",
-      "game_id": "destiny",
-      "name": "Eternity",
-      "origin": "d2",
-      "release": "curated",
-      "verified": false,
-      "note": "NEEDS REVIEW - Destiny wikis unreachable from this environment"
+      "id": "cs-rats",
+      "game_id": "cs",
+      "name": "Rats",
+      "release": "canonical",
+      "verified": true
     }
   ]
 }
