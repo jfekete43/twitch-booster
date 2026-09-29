@@ -3,12 +3,31 @@
   "notes": "Launch map database for pairwise map-ranking site. verified=true means the map list was confirmed against sources this session.",
   "games": [
     {
+      "id": "cs",
+      "name": "Counter-Strike",
+      "short": "CS",
+      "year": 1999,
+      "developer": "Valve",
+      "platform": "PC",
+      "verified": true,
+      "scope": "franchise-canonical, deduped across 1.6/Source/GO/CS2"
+    },
+    {
       "id": "socom2",
       "name": "SOCOM II: U.S. Navy SEALs",
       "short": "SOCOM 2",
       "year": 2003,
       "developer": "Zipper Interactive",
       "platform": "PS2",
+      "verified": true
+    },
+    {
+      "id": "halo2",
+      "name": "Halo 2",
+      "short": "Halo 2",
+      "year": 2004,
+      "developer": "Bungie",
+      "platform": "Xbox",
       "verified": true
     },
     {
@@ -30,13 +49,14 @@
       "verified": false
     },
     {
-      "id": "halo3",
-      "name": "Halo 3",
-      "short": "Halo 3",
-      "year": 2007,
-      "developer": "Bungie",
-      "platform": "Xbox 360",
-      "verified": true
+      "id": "rfom",
+      "name": "Resistance: Fall of Man",
+      "short": "Resistance",
+      "year": 2006,
+      "developer": "Insomniac Games",
+      "platform": "PS3",
+      "verified": false,
+      "review_note": "10 of 11 base maps identified; one base map name unresolved"
     },
     {
       "id": "cod4",
@@ -48,23 +68,13 @@
       "verified": true
     },
     {
-      "id": "blackops",
-      "name": "Call of Duty: Black Ops",
-      "short": "Black Ops",
-      "year": 2010,
-      "developer": "Treyarch",
-      "platform": "Multi",
+      "id": "halo3",
+      "name": "Halo 3",
+      "short": "Halo 3",
+      "year": 2007,
+      "developer": "Bungie",
+      "platform": "Xbox 360",
       "verified": true
-    },
-    {
-      "id": "cs",
-      "name": "Counter-Strike",
-      "short": "CS",
-      "year": 1999,
-      "developer": "Valve",
-      "platform": "PC",
-      "verified": true,
-      "scope": "franchise-canonical, deduped across 1.6/Source/GO/CS2"
     },
     {
       "id": "tf2",
@@ -77,14 +87,22 @@
       "scope": "20-map canonical cut from the 91 Valve maps; approved"
     },
     {
-      "id": "r6siege",
-      "name": "Rainbow Six Siege",
-      "short": "Siege",
-      "year": 2015,
-      "developer": "Ubisoft Montreal",
+      "id": "killzone2",
+      "name": "Killzone 2",
+      "short": "Killzone 2",
+      "year": 2009,
+      "developer": "Guerrilla Games",
+      "platform": "PS3",
+      "verified": true
+    },
+    {
+      "id": "blackops",
+      "name": "Call of Duty: Black Ops",
+      "short": "Black Ops",
+      "year": 2010,
+      "developer": "Treyarch",
       "platform": "Multi",
-      "verified": true,
-      "scope": "lifetime map list; reworks collapsed into one entry per map"
+      "verified": true
     },
     {
       "id": "destiny",
@@ -96,6 +114,16 @@
       "verified": false,
       "scope": "Destiny 1 Crucible only; D2 excluded by scope decision",
       "review_note": "map list still needs review - Destiny wikis unreachable from this environment"
+    },
+    {
+      "id": "r6siege",
+      "name": "Rainbow Six Siege",
+      "short": "Siege",
+      "year": 2015,
+      "developer": "Ubisoft Montreal",
+      "platform": "Multi",
+      "verified": true,
+      "scope": "lifetime map list; reworks collapsed into one entry per map"
     }
   ],
   "maps": [
@@ -519,7 +547,8 @@
       "game_id": "halo3",
       "name": "Blackout",
       "release": "dlc",
-      "dlc_pack": "Legendary Map Pack"
+      "dlc_pack": "Legendary Map Pack",
+      "remake_of": "halo2-lockout"
     },
     {
       "id": "halo3-ghost-town",
@@ -533,7 +562,8 @@
       "game_id": "halo3",
       "name": "Cold Storage",
       "release": "dlc",
-      "dlc_pack": "Free release (2008)"
+      "dlc_pack": "Free release (2008)",
+      "remake_of_external": "Chill Out (Halo CE)"
     },
     {
       "id": "halo3-assembly",
@@ -568,7 +598,8 @@
       "game_id": "halo3",
       "name": "Heretic",
       "release": "dlc",
-      "dlc_pack": "Mythic II Map Pack"
+      "dlc_pack": "Mythic II Map Pack",
+      "remake_of": "halo2-midship"
     },
     {
       "id": "halo3-longshore",
@@ -1664,6 +1695,416 @@
       "game_id": "cs",
       "name": "Rats",
       "release": "canonical",
+      "verified": true
+    },
+    {
+      "id": "halo2-lockout",
+      "game_id": "halo2",
+      "name": "Lockout",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-ascension",
+      "game_id": "halo2",
+      "name": "Ascension",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-midship",
+      "game_id": "halo2",
+      "name": "Midship",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-ivory-tower",
+      "game_id": "halo2",
+      "name": "Ivory Tower",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-beaver-creek",
+      "game_id": "halo2",
+      "name": "Beaver Creek",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true,
+      "remake_of_external": "Battle Creek (Halo CE)"
+    },
+    {
+      "id": "halo2-burial-mounds",
+      "game_id": "halo2",
+      "name": "Burial Mounds",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-colossus",
+      "game_id": "halo2",
+      "name": "Colossus",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-zanzibar",
+      "game_id": "halo2",
+      "name": "Zanzibar",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-coagulation",
+      "game_id": "halo2",
+      "name": "Coagulation",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true,
+      "remake_of_external": "Blood Gulch (Halo CE)"
+    },
+    {
+      "id": "halo2-headlong",
+      "game_id": "halo2",
+      "name": "Headlong",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-waterworks",
+      "game_id": "halo2",
+      "name": "Waterworks",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-foundation",
+      "game_id": "halo2",
+      "name": "Foundation",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "halo2-containment",
+      "game_id": "halo2",
+      "name": "Containment",
+      "release": "dlc",
+      "dlc_pack": "Bonus Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-warlock",
+      "game_id": "halo2",
+      "name": "Warlock",
+      "release": "dlc",
+      "dlc_pack": "Bonus Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-sanctuary",
+      "game_id": "halo2",
+      "name": "Sanctuary",
+      "release": "dlc",
+      "dlc_pack": "Killtacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-turf",
+      "game_id": "halo2",
+      "name": "Turf",
+      "release": "dlc",
+      "dlc_pack": "Killtacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-gemini",
+      "game_id": "halo2",
+      "name": "Gemini",
+      "release": "dlc",
+      "dlc_pack": "Maptacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-elongation",
+      "game_id": "halo2",
+      "name": "Elongation",
+      "release": "dlc",
+      "dlc_pack": "Maptacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-backwash",
+      "game_id": "halo2",
+      "name": "Backwash",
+      "release": "dlc",
+      "dlc_pack": "Maptacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-relic",
+      "game_id": "halo2",
+      "name": "Relic",
+      "release": "dlc",
+      "dlc_pack": "Maptacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-terminal",
+      "game_id": "halo2",
+      "name": "Terminal",
+      "release": "dlc",
+      "dlc_pack": "Maptacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-desolation",
+      "game_id": "halo2",
+      "name": "Desolation",
+      "release": "dlc",
+      "dlc_pack": "Blastacular Pack",
+      "verified": true
+    },
+    {
+      "id": "halo2-tombstone",
+      "game_id": "halo2",
+      "name": "Tombstone",
+      "release": "dlc",
+      "dlc_pack": "Blastacular Pack",
+      "verified": true
+    },
+    {
+      "id": "killzone2-blood-gracht",
+      "game_id": "killzone2",
+      "name": "Blood Gracht",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-corinth-crossing",
+      "game_id": "killzone2",
+      "name": "Corinth Crossing",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-helghan-industries",
+      "game_id": "killzone2",
+      "name": "Helghan Industries",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-pyrrhus-rise",
+      "game_id": "killzone2",
+      "name": "Pyrrhus Rise",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-radec-academy",
+      "game_id": "killzone2",
+      "name": "Radec Academy",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-salamun-market",
+      "game_id": "killzone2",
+      "name": "Salamun Market",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-tharsis-depot",
+      "game_id": "killzone2",
+      "name": "Tharsis Depot",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-visari-hammer",
+      "game_id": "killzone2",
+      "name": "Visari Hammer",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-arctower-landing",
+      "game_id": "killzone2",
+      "name": "Arctower Landing",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-beach-head",
+      "game_id": "killzone2",
+      "name": "Beach Head",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-southern-hills",
+      "game_id": "killzone2",
+      "name": "Southern Hills",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-suljeva-cliffside",
+      "game_id": "killzone2",
+      "name": "Suljeva Cliffside",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-vekta-cruiser",
+      "game_id": "killzone2",
+      "name": "Vekta Cruiser",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "killzone2-wasteland-bullet",
+      "game_id": "killzone2",
+      "name": "Wasteland Bullet",
+      "release": "dlc",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-grimsby",
+      "game_id": "rfom",
+      "name": "Grimsby",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-hangar",
+      "game_id": "rfom",
+      "name": "Hangar",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-manchester",
+      "game_id": "rfom",
+      "name": "Manchester",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-nottingham",
+      "game_id": "rfom",
+      "name": "Nottingham",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-rooftops",
+      "game_id": "rfom",
+      "name": "Rooftops",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-somerset",
+      "game_id": "rfom",
+      "name": "Somerset",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-subway",
+      "game_id": "rfom",
+      "name": "Subway",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-thames",
+      "game_id": "rfom",
+      "name": "Thames",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-the-mall",
+      "game_id": "rfom",
+      "name": "The Mall",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-u-s-s-lexington",
+      "game_id": "rfom",
+      "name": "U.S.S. Lexington",
+      "release": "base",
+      "dlc_pack": null,
+      "verified": true
+    },
+    {
+      "id": "rfom-westmorland",
+      "game_id": "rfom",
+      "name": "Westmorland",
+      "release": "dlc",
+      "dlc_pack": "Map Pack 1",
+      "verified": true
+    },
+    {
+      "id": "rfom-camborne",
+      "game_id": "rfom",
+      "name": "Camborne",
+      "release": "dlc",
+      "dlc_pack": "Map Pack 1",
+      "verified": true
+    },
+    {
+      "id": "rfom-bracknell",
+      "game_id": "rfom",
+      "name": "Bracknell",
+      "release": "dlc",
+      "dlc_pack": "Map Pack 2",
+      "verified": true
+    },
+    {
+      "id": "rfom-axbridge",
+      "game_id": "rfom",
+      "name": "Axbridge",
+      "release": "dlc",
+      "dlc_pack": "Map Pack 2",
       "verified": true
     }
   ]
