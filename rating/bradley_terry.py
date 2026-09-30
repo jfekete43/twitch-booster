@@ -43,24 +43,29 @@ def fit(comparisons, map_ids=None, lam=DEFAULT_LAMBDA, tol=1e-9, max_iter=500):
 
     Returns {map_id: {theta, stderr, n_comparisons, n_wins}}.
     """
-    comparisons = list(comparisons)
+    # Accept (winner, loser) or (winner, loser, count). Counts matter for the
+    # flat-loss model: one top-9 submission implies 9 * 253 = 2,277 losses, so
+    # storing a row each does not scale. The number of *distinct* pairs is
+    # bounded by the map count however many lists are submitted, so the fit
+    # stays the same size at any volume.
+    parsed = [(c[0], c[1], c[2] if len(c) > 2 else 1) for c in comparisons]
 
     ids = set(map_ids or ())
-    for w, l in comparisons:
+    for w, l, _ in parsed:
         ids.add(w)
         ids.add(l)
     ids = sorted(ids)
     idx = {m: i for i, m in enumerate(ids)}
     n = len(ids)
 
-    pairs = [(idx[w], idx[l]) for w, l in comparisons]
+    pairs = [(idx[w], idx[l], k) for w, l, k in parsed]
 
     n_comp = [0] * n
     n_wins = [0] * n
-    for w, l in pairs:
-        n_comp[w] += 1
-        n_comp[l] += 1
-        n_wins[w] += 1
+    for w, l, k in pairs:
+        n_comp[w] += k
+        n_comp[l] += k
+        n_wins[w] += k
 
     theta = [0.0] * n
 
@@ -68,12 +73,12 @@ def fit(comparisons, map_ids=None, lam=DEFAULT_LAMBDA, tol=1e-9, max_iter=500):
         grad = [0.0] * n
         fisher = [0.0] * n
 
-        for w, l in pairs:
+        for w, l, k in pairs:
             p = sigmoid(theta[w] - theta[l])
-            resid = 1.0 - p          # observed (1) minus expected
+            resid = k * (1.0 - p)    # observed minus expected, times count
             grad[w] += resid
             grad[l] -= resid
-            info = p * (1.0 - p)
+            info = k * p * (1.0 - p)
             fisher[w] += info
             fisher[l] += info
 
@@ -103,9 +108,9 @@ def fit(comparisons, map_ids=None, lam=DEFAULT_LAMBDA, tol=1e-9, max_iter=500):
     # ordering maps by uncertainty, which is what the sampler needs. For
     # displayed confidence intervals, invert the full Fisher matrix instead.
     fisher = [lam] * n
-    for w, l in pairs:
+    for w, l, k in pairs:
         p = sigmoid(theta[w] - theta[l])
-        info = p * (1.0 - p)
+        info = k * p * (1.0 - p)
         fisher[w] += info
         fisher[l] += info
 
