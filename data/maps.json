@@ -10,7 +10,8 @@
       "developer": "Valve",
       "platform": "PC",
       "verified": true,
-      "scope": "franchise-canonical, deduped across 1.6/Source/GO/CS2"
+      "scope": "franchise-canonical, deduped across 1.6/Source/GO/CS2",
+      "franchise": "Counter-Strike"
     },
     {
       "id": "socom2",
@@ -19,7 +20,8 @@
       "year": 2003,
       "developer": "Zipper Interactive",
       "platform": "PS2",
-      "verified": true
+      "verified": true,
+      "franchise": "SOCOM"
     },
     {
       "id": "halo2",
@@ -28,7 +30,8 @@
       "year": 2004,
       "developer": "Bungie",
       "platform": "Xbox",
-      "verified": true
+      "verified": true,
+      "franchise": "Halo"
     },
     {
       "id": "gears1",
@@ -37,7 +40,8 @@
       "year": 2006,
       "developer": "Epic Games",
       "platform": "Xbox 360/PC",
-      "verified": true
+      "verified": true,
+      "franchise": "Gears of War"
     },
     {
       "id": "r6vegas",
@@ -46,7 +50,8 @@
       "year": 2006,
       "developer": "Ubisoft Montreal",
       "platform": "Multi",
-      "verified": false
+      "verified": false,
+      "franchise": "Rainbow Six"
     },
     {
       "id": "rfom",
@@ -56,7 +61,8 @@
       "developer": "Insomniac Games",
       "platform": "PS3",
       "verified": false,
-      "review_note": "10 of 11 base maps identified; one base map name unresolved"
+      "review_note": "10 of 11 base maps identified; one base map name unresolved",
+      "franchise": "Resistance"
     },
     {
       "id": "cod4",
@@ -65,7 +71,8 @@
       "year": 2007,
       "developer": "Infinity Ward",
       "platform": "Multi",
-      "verified": true
+      "verified": true,
+      "franchise": "Call of Duty"
     },
     {
       "id": "halo3",
@@ -74,7 +81,8 @@
       "year": 2007,
       "developer": "Bungie",
       "platform": "Xbox 360",
-      "verified": true
+      "verified": true,
+      "franchise": "Halo"
     },
     {
       "id": "tf2",
@@ -84,7 +92,8 @@
       "developer": "Valve",
       "platform": "PC",
       "verified": true,
-      "scope": "20-map canonical cut from the 91 Valve maps; approved"
+      "scope": "20-map canonical cut from the 91 Valve maps; approved",
+      "franchise": "Team Fortress"
     },
     {
       "id": "killzone2",
@@ -93,7 +102,8 @@
       "year": 2009,
       "developer": "Guerrilla Games",
       "platform": "PS3",
-      "verified": true
+      "verified": true,
+      "franchise": "Killzone"
     },
     {
       "id": "blackops",
@@ -102,7 +112,8 @@
       "year": 2010,
       "developer": "Treyarch",
       "platform": "Multi",
-      "verified": true
+      "verified": true,
+      "franchise": "Call of Duty"
     },
     {
       "id": "destiny",
@@ -113,7 +124,8 @@
       "platform": "Multi",
       "verified": false,
       "scope": "Destiny 1 Crucible only; D2 excluded by scope decision",
-      "review_note": "map list still needs review - Destiny wikis unreachable from this environment"
+      "review_note": "map list still needs review - Destiny wikis unreachable from this environment",
+      "franchise": "Destiny"
     },
     {
       "id": "r6siege",
@@ -123,7 +135,8 @@
       "developer": "Ubisoft Montreal",
       "platform": "Multi",
       "verified": true,
-      "scope": "lifetime map list; reworks collapsed into one entry per map"
+      "scope": "lifetime map list; reworks collapsed into one entry per map",
+      "franchise": "Rainbow Six"
     }
   ],
   "maps": [
